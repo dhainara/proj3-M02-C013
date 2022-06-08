@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet"/>
+    <title>Inicio</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+        <section id="bannerInicial">
+            <h1>Bem-vindo a sua <span>Livraria On</span>-line</h1>
+            <article>
+                <div class="info">
+                    <i class="bi bi-bookmark"></i>
+                    <p>Armazene seus livros de forma segura e rápida!</p>
+                </div>
+                <div class="info">
+                    <i class="bi bi-book"></i>
+                    <p>Seus livros favoritos em um só lugar.</p>
+                </div>
+            </article>
+        </section>
+        <section id="estante">
+            <% estanteLivros.forEach(element=> { %>
+                <a href="detalhes/<%=element.id%>">
+                    <article>
+                        <div class="title">
+                            <h4><%=element.name%></h4>
+                        </div>
+                        <div class="capa">
+                            <img src="<%=element.cover%>"/>
+                        </div>
+                        <div class="dados">
+                            <p><%=element.editor%></p>
+                            <p><%=element.year%></p>
+                        </div>
+                        <div class="card_actions">
+                            <ul>
+                                <li><a href="/delete/<%=element.id%>">Excluir</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </a>
+            <% }) %>
+        </section>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+    <script src='/js/script.js'></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter&family=Kumbh+Sans&family=Open+Sans:wght@500&family=Plus+Jakarta+Sans:wght@300&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    gap: 20px;
+    background-color: bisque;
+    padding: 10px;
+}
+
+main {
+    min-height: 80%;
+}
+
+section#bannerInicial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    height: 50%;
+    gap: 20px;
+    padding: 20px;
+}
+
+section#bannerInicial article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+section#bannerInicial article div.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 30%;
+}
+
+section#bannerInicial article div.info i {
+    width: 50px;
+    border: 10px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+section#estante {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+
+section#estante article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 20px;
+    padding: 5px;
+    height: 400px;
+    width: 200px;
+    background-color: lightgrey;
+
+}
+
+section#estante article img{
+    width: 80%;
+}
+
+section#estante article div {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+}
+
+section#estante article div.title {
+   
+}
+
+section#estante article div.capa {
+   
+}
+
+section#estante article div.card_actions, section#estante article div.dados{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+section#estante article div.card_actions li{
+    background-color: lightsalmon;
+    padding: 10px;
+    color: white;
+}
+
+section#estante article div.card_actions li:hover {
+    background-color: salmon;
+    padding: 10.5px;
+    color: white;
+    transition: 0.3s;
+}

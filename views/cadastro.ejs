@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <title>Inicio</title>
+</head>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+        <main>
+            <section>
+                    <form action="/cadastro" method="POST">
+                        <fieldset>
+                            <label for="name">Nome</label>
+                            <input type="text" name="name">
+                        </fieldset>
+                        <fieldset>
+                            <label for="pages">Total páginas</label>
+                            <input type="number" name="pages">
+                        </fieldset>
+                        <fieldset>
+                            <label for="editor">Editora</label>
+                            <input type="text" name="editor">
+                        </fieldset>
+                        <fieldset>
+                            <label for="cover">Capa</label>
+                            <input type="url" name="cover">
+                        </fieldset>
+                        <fieldset>
+                            <label for="year">Ano</label>
+                            <input type="text" name="year">
+                        </fieldset>
+                        <fieldset>
+                            <label for="autor">Autor</label>
+                            <input type="text" name="autor">
+                        </fieldset>
+                        <fieldset>
+                            <label for="language">Idioma</label>
+                            <input type="text" name="language">
+                        </fieldset>
+                        <fieldset>
+                            <label for="genero">Genero</label>
+                            <input type="text" name="genero">
+                        </fieldset>
+
+                        <button type="submit">Cadastrar</button>
+
+                    </form>
+            </section>
+        </main>
+        <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>
