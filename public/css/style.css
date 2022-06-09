@@ -4,60 +4,70 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    
 }
 
 body {
     width: 100vw;
     height: 100vh;
+    background-color: #EDD3C3;
 }
 
-header,
-footer {
+header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10%;
-    gap: 20px;
-    background-color: bisque;
-    padding: 10px;
+    flex-direction: column;
 }
 
-main {
-    min-height: 80%;
+header section#headerInicial {
+    min-height: 10%;
+    padding: 20px;
+    width: 100vw;
+    display: flex;
+    background-color: #fcdacc;
 }
 
-section#bannerInicial {
+header section#bannerInicial {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: blanchedalmond;
-    height: 50%;
+    min-height: 250px;
+    width: 100vw;
     gap: 20px;
     padding: 20px;
 }
 
-section#bannerInicial article {
+header section#bannerInicial article {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
-section#bannerInicial article div.info {
+header section#bannerInicial article div.info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     width: 30%;
 }
 
-section#bannerInicial article div.info i {
+header section#bannerInicial article div.info img {
     width: 50px;
-    border: 10px;
-    border-radius: 15px;
-    padding: 20px;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+main {
+    min-height: 80%;
+    margin: 0 40px;
+    background-color: aliceblue;
 }
 
 section#estante {
@@ -78,53 +88,101 @@ a{
     color: currentColor;
 }
 
-
 section#estante article {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    font-size: 15px;
+    font-size: 13px;
     gap: 20px;
-    padding: 5px;
-    height: 400px;
-    width: 200px;
-    background-color: lightgrey;
-
+    padding: 20px;
+    height: 300px;
+    width: 250px;
+    border: 3px solid lightgray;
+    border-radius: 15px;
 }
 
 section#estante article img{
-    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
 }
 
 section#estante article div {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     width: 80%;
 }
-
-section#estante article div.title {
-   
+section#estante article div p{
+    display: flex;
+    gap: 20px;
+    background-color: #C6896C;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
 }
 
-section#estante article div.capa {
-   
-}
-
-section#estante article div.card_actions, section#estante article div.dados{
+div.card_actions, section#estante article div.dados{
     display: flex;
     flex-wrap: wrap;
-
 }
 
-section#estante article div.card_actions li{
+div.card_actions li{
     background-color: lightsalmon;
     padding: 10px;
     color: white;
 }
 
-section#estante article div.card_actions li:hover {
+div.card_actions li:hover {
     background-color: salmon;
     padding: 10.5px;
     color: white;
     transition: 0.3s;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+        align-items: center;
+        padding: 50px;
+
+}
+
+section article#detalhes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 13px;
+    gap: 20px;
+    padding: 20px;
+    height: fit-content;
+    width: 250px;
+    border: 3px solid lightgray;
+    border-radius: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 10%;
+    gap: 20px;
+    font-size: 14px;
+    background-color:#C6896C;
+    color: white;
+    padding: 50px 10px;
+}
+
+footer img {
+    width: 50px;
+}
+
+footer ul {
+    display: flex;
+    gap: 20px;
 }

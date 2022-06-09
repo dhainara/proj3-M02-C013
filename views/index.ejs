@@ -11,19 +11,6 @@
 <body>
     <%- include('./partials/header.ejs') %>
     <main>
-        <section id="bannerInicial">
-            <h1>Bem-vindo a sua <span>Livraria On</span>-line</h1>
-            <article>
-                <div class="info">
-                    <i class="bi bi-bookmark"></i>
-                    <p>Armazene seus livros de forma segura e rápida!</p>
-                </div>
-                <div class="info">
-                    <i class="bi bi-book"></i>
-                    <p>Seus livros favoritos em um só lugar.</p>
-                </div>
-            </article>
-        </section>
         <section id="estante">
             <% estanteLivros.forEach(element=> { %>
                 <a href="detalhes/<%=element.id%>">
